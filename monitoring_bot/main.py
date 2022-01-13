@@ -22,7 +22,7 @@ sslcontext.verify_mode = ssl.CERT_NONE
 engine = create_engine(
     DATABASE_URL, pool_size=3, max_overflow=0
 )
-metadata.drop_all(engine) # use if you want to recreate database with program restart
+# metadata.drop_all(engine) # use if you want to recreate database with program restart
 metadata.create_all(engine)
 
 

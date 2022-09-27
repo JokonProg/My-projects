@@ -13,6 +13,7 @@ from database import database, engine, metadata
 from database.models import db_clients, db_clients_emoji, db_emoji_defaults, db_active_alerts, \
     db_message_template_default, db_messages_templates, select
 
+
 log_dir = 'logs/'
 log_file = 'access.log'
 log_level = 'debug'

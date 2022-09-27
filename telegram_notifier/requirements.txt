@@ -21,3 +21,4 @@ SQLAlchemy==1.4.36
 typing_extensions==4.2.0
 urllib3==1.26.9
 yarl==1.7.2
+

@@ -5,6 +5,7 @@ import requests
 import logging
 import sys
 
+
 URL = 'https://api.vk.com/method/wall.post?'
 DATA = {'owner_id': '<vk_id>',
        'from_group': '1',

@@ -13,3 +13,4 @@ DATABASE_URL = f'postgresql://{db_username}:{db_password}@{host_server}:{db_serv
 
 database = databases.Database(DATABASE_URL)
 engine = sqlalchemy.create_engine(DATABASE_URL, pool_size=3, max_overflow=0, echo=False)
+

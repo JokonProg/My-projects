@@ -3,6 +3,7 @@ import os
 import psycopg2
 from psycopg2.extras import DictCursor
 
+
 # postgres variables {
 PG_PORT = os.environ['PG_PORT']
 PG_DB_NAME = os.environ['PG_DB_NAME']

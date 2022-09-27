@@ -190,3 +190,4 @@ if __name__ == '__main__':
     logger.debug('Program Started')
     main()
     logger.debug('Program closed')
+

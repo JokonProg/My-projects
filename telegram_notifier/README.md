@@ -32,7 +32,7 @@ vim .bashrc
 
 ```commandline
 git init
-git clone https://gitlab.svcp.io/kzhuravlev/arbor_bot.git
+git clone https://gitlab.svcp.io/useer/arbor_bot.git
 cd /cybertapi
 ```
 ```bash
@@ -59,13 +59,13 @@ Description=Arborbot cool version
 After=network.target
 
 [Service]
-User=kzhuravlev
+User=user
 Group=www-data
-WorkingDirectory=/home/kzhuravlev/arbor_bot
-Environment="PATH=/home/kzhuravlev/arbor_bot/env/bin"
-ExecStart=/home/kzhuravlev/arbor_bot/env/bin/python3.10 main.py
+WorkingDirectory=/home/user/arbor_bot
+Environment="PATH=/home/user/arbor_bot/env/bin"
+ExecStart=/home/user/arbor_bot/env/bin/python3.10 main.py
 Restart=always
-PIDFile=/home/kzhuravlev/arbor_bot/arb_ervice.pid
+PIDFile=/home/user/arbor_bot/arb_ervice.pid
 
 [Install]
 WantedBy=multi-user.target
@@ -77,13 +77,13 @@ Description=Telegram sender
 After=network.target
 
 [Service]
-User=kzhuravlev
+User=user
 Group=www-data
-WorkingDirectory=/home/kzhuravlev/arbor_bot
-Environment="PATH=/home/kzhuravlev/arbor_bot/env/bin"
-ExecStart=/home/kzhuravlev/arbor_bot/env/bin/python3.10 telegram_messages_sender.py
+WorkingDirectory=/home/user/arbor_bot
+Environment="PATH=/home/user/arbor_bot/env/bin"
+ExecStart=/home/user/arbor_bot/env/bin/python3.10 telegram_messages_sender.py
 Restart=always
-PIDFile=/home/kzhuravlev/arbor_bot/tg_service.pid
+PIDFile=/home/user/arbor_bot/tg_service.pid
 
 [Install]
 WantedBy=multi-user.target

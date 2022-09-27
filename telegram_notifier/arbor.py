@@ -45,3 +45,4 @@ class ArborAlert(BaseModel):
     impact_bps_points: Optional[List[int]]
     impact_pps_points: Optional[List[int]]
     impact_recorded: Optional[List[int]]
+

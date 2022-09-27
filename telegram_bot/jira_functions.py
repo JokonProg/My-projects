@@ -28,6 +28,7 @@ Assigned to: %(assigned)s
 https://variti.atlassian.net/browse/%(key)s'''
 CREATOR = {'key': '', 'summary': '', 'reporter': '', 'assigned': ''}
 
+
 formatter = """`{}: {}`
    Status: *{}*
    Assigned: _{}_ {}

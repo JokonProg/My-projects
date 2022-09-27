@@ -1,5 +1,6 @@
 import json
 
+
 percentage = 0.8
 enter = '\n'
 

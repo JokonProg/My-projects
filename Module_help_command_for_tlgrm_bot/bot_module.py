@@ -7,6 +7,7 @@ import sys
 
 app = Flask(__name__)
 
+
 def open_connection():
   """Opening connection to MySQL database"""
   try:

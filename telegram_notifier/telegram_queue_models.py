@@ -10,3 +10,4 @@ class TelegramQueueElement(BaseModel):
     client_id: int
     alert_id: int
     nosound: bool
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# First argument: Client identifier
+
+WORKDIR=/home/user/dns_script
+FILE=$(date +%s).xml
+
+curl -s http://192.168.0.1:8953/ -o $WORKDIR/$FILE &&
+/home/user/dns_script/env/bin/python script.py $WORKDIR/$FILE &&
+gzip $WORKDIR/$FILE &&
+mv $WORKDIR/$FILE.gz $WORKDIR/archives/
